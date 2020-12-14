@@ -1,0 +1,62 @@
+﻿Build1=Default,b4a.example
+File1=tela1.bal
+File2=tela2.bal
+File3=tela3.bal
+FileGroup1=Default Group
+FileGroup2=Default Group
+FileGroup3=Default Group
+Group=Default Group
+Library1=core
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="26"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~CreateResourceFromFile(Macro, Themes.DarkTheme)~\n~'End of default text.~\n~
+Module1=Person
+Module2=Starter
+NumberOfFiles=3
+NumberOfLibraries=1
+NumberOfModules=2
+Version=10.2
+@EndOfDesignText@
+#Region  Project Attributes 
+	'NOME DO APLICATIVO
+	#ApplicationLabel: Layout com Porcentagem
+	'VERSÃO (EXEMPLO 1,2,3,4,5)
+	#VersionCode: 1
+	'NOME DA VERSÃO (EXEMPLO 1.0,1.1,1.2,1.3....)
+	#VersionName: 1.0
+	'TIPO DE TELA QUE O APLICATIVO VAI USAR (portrait) = SMARTPHONE EM PÉ, (landscape) = SMARTPHONE DEITADO ETC...
+	#SupportedOrientations: portrait
+	'O APLICATIVO PODE SER INSTALADO EM UM CARTÃO SD OU SEMELHANTE?
+	#CanInstallToExternalStorage: False
+#End Region
+
+#Region  Activity Attributes 
+	'O APLICATIVO VAI SER EM TELA CHEIA?
+	#FullScreen: False
+	'O APLICATIVO VAI MOSTRAR O TÍTULO NA TELA?
+	#IncludeTitle: False 
+	'Use sempre False ou True, ou seja, verdadeiro ou falso.
+#End Region
+
+Sub Process_Globals
+End Sub
+
+Sub Globals
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean) 'ignore
+	'CRIEI ALGUNS LAYOUTS NA ABA (DESIGNER) E SALVEI COM NOME tela1,tela2 e tela3
+	'LOGO ABAIXO, NA CRIAÇÃO DE NOSSA ACTIVITY(TELA), CARREGAMOS O LAYOUT CRIADO NA ABA DESIGNER
+	'VOU DEIXAR COMENTADO OS LAYOUTS, VOCÊ PODE IR COMENTANDO E DESCOMENTANDO OS LAYOUTS PARA VER A DIFERENÇA
+	'ENTRE ELES
+'	Activity.LoadLayout("tela1")
+'	Activity.LoadLayout("tela2")
+	Activity.LoadLayout("tela3")
+	'PARA DESCOMENTAR E COMENTAR BASTA USAR O CARACTERE (') 
+End Sub
+
+Sub Activity_Resume
+
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
